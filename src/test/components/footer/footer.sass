@@ -1,0 +1,40 @@
+footer
+	width: 100%
+	position: absolute
+	height: 100px
+	bottom: 0
+	left: 0
+	z-index: 10
+
+.footer_box
+	height: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+
+
+
+
+.clearfix
+  &:after,
+  &:before
+    content: ''
+    display: table
+
+.clearfix
+  &:after
+    clear: both
+
+ul, ol, p, tr, img, i
+  list-style: none
+  padding: 0
+  margin: 0
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
