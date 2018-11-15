@@ -1,13 +1,3 @@
-// import React from 'react';
-
-// const Home = () => (
-//   <div className="container">
-//       <h1>It's the Home page of simple SPA</h1>
-//   </div>
-// );
-
-// export default Home;
-
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './home.sass';

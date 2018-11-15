@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './header.sass';
 
+
 const Header = () => (
   <header className="header">
     <div className="header_box container">
