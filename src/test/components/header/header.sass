@@ -1,6 +1,9 @@
 header
 	height: 80px
-	background: #ddf1ea
+	background: rgba(0, 0, 0, 0.3)
+	position: absolute
+	width: 100%
+	z-index: 10
 
 .header_box
 	display: flex
@@ -15,7 +18,7 @@ header
 		&:last-child
 			margin-right: 0
 		a
-			color: #222
+			color: #ffffff
 			padding-bottom: 2px
 			display: inline-block
 			position: relative
@@ -27,7 +30,7 @@ header
 				position: absolute
 				display: block
 				height: 1px
-				background: #222
+				background: #ffffff
 				width: 100%
 				transform: translateX(-101px)
 				transition: .3s linear
@@ -36,3 +39,6 @@ header
 					transform: translateX(0px)
 					transition: .3s linear
 
+.logo
+	a
+		color: #ffffff

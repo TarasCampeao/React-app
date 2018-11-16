@@ -1,5 +1,77 @@
 h1
 	margin-bottom: 30px
+	font-size: 48px
+
+.main-content
+	background: url("bg-1.jpg") no-repeat center top
+	display: block
+	position: relative
+	padding-top: 80px
+	height: 100vh
+
+.view-block
+	height: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	h1,
+	h4,
+	h5
+		color: #ffffff
+	h4
+		margin-bottom: 20px
+		font-size: 24px
+
+.bottom_scroll
+	position: absolute
+	bottom: 30px
+
+.line-scroll
+    display: block
+    width: 2px
+    height: 95px
+    overflow: hidden
+    background: #ffffff
+    margin: 0 auto 10px auto
+    z-index: 10
+
+.line-scroll .line.active
+    animation: line-scroll 3s ease-in-out forwards infinite
+
+.line-scroll .line
+    z-index: 11
+    display: block
+    width: 2px
+    height: 99px
+    background: #ffffff
+    background: linear-gradient(to bottom,#f5deb3 50%,transparent 50%)
+    background-size: 100% 200%
+    background-position: 0 -100px
+    transform: translateY(-2px)
+    color: #f5deb3
+
+.scroll_2
+  height: 40px
+  background: #b9abab
+  z-index: 1000
+
+.scroll_2 .line.active
+    transform: translateY(-57px)
+
+@keyframes line-scroll
+    0%
+   		background-position: 0 -100px
+    80%
+        background-position: 0 0
+    100%
+        background-position: 0 100px
+
+
+//post-block
+//post-block
+//post-block
+.post-block
+	padding: 80px 15px
 
 .post_list
 	position: relative
@@ -10,5 +82,73 @@ h1
 		width: 30%
 		border: 1px solid #efd1d1
 		border-radius: 5px
-		padding: 10px
 		margin: 10px
+		position: relative
+		overflow: hidden
+
+.post-content
+	.container
+		padding: 80px 15px
+
+.title_post
+	border-bottom: 1px solid #e0d6d6
+	padding-bottom: 5px
+	margin-bottom: 20px
+	min-height: 50px
+	&:first-letter
+		text-transform: uppercase
+
+.about_post
+	font-size: 16px
+	&:first-letter
+		text-transform: uppercase
+
+.main_info_post
+	transition: .3s linear	
+
+.more_info
+	padding: 15px 10px 10px 10px
+	display: block
+	position: relative
+	height: 100%
+	&:after
+		content: ''
+		position: absolute
+		display: block
+		height: 100%
+		width: 100%
+		background: rgba(0, 0, 0, 0)
+		left: 0
+		top: 0
+		transition: .3s linear
+	&:hover
+		&:after
+			background: rgba(0, 0, 0, .5)
+			transition: .3s linear
+		.main_info_post
+			opacity: .2
+			transition: .3s linear
+			transform: scale(.9)
+		.read_more
+			span
+				transition: .3s linear
+				transform: translateY(0%)
+	*
+		color: #222222
+		position: relative
+
+.read_more
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	overflow: hidden
+	margin: 0 auto
+	z-index: 50
+	span
+		transform: translateY(100%)
+		transition: .3s linear
+		color: #ffffff
+		display: block
+
+
