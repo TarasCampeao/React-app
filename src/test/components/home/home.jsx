@@ -13,7 +13,7 @@ class Home extends Component {
       .then(res => res.json())
       .then(data => {
         this.setState({
-          data
+          data: data.slice(0, 12)
         })
       })
   }
@@ -32,8 +32,8 @@ class Home extends Component {
 			  	  	<h4>There are you can find some collection with posts</h4>
 		  	  	</div>
 		  	  	<div className="bottom_scroll">
-			        <div class="line-scroll scroll scroll_2">
-			            <span class="line active"></span>
+			        <div className="line-scroll scroll scroll_2">
+			            <span className="line active"></span>
 			        </div>
 			        <h5>Just scroll down</h5>
 		        </div>

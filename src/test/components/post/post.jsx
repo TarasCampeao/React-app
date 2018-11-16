@@ -32,17 +32,17 @@ class Post extends Component {
 
   render() {
     const { post, users, comments, data } = this.state;
-    const { title, body } = post;
+    const { title, body, id } = post;
     const { name } = users;
 
     return (
       <Fragment>
-        <div className="container">
-          <h1>Post</h1>
+        <div className="mono_post container">
+          <h1><span>Post</span> #{id}</h1>
           <div>
-            <h2>{ title }</h2>
-            <p>{ body }</p>
-            <div>{ name }</div>
+            <h2 className="title_post">{ title }</h2>
+            <p className="about_post">{ body }</p>
+            <div><span className="state_post">Author:</span> { name }</div>
           </div>
         </div>
       </Fragment>

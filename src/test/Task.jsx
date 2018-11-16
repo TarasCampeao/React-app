@@ -3,8 +3,7 @@ import React, { Fragment } from 'react';
 
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
-import './components/home/home.sass';
-import './assets/style/reset.sass';
+//import './assets/style/reset.sass';
 
 
 const App = ({ children }) => (

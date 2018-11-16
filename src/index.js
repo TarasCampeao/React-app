@@ -9,6 +9,9 @@ import Home from './test/components/home/home';
 import About from './test/components/about/about';
 import Contacts from './test/components/contacts/contacts';
 import Post from './test/components/post/post';
+import './test/assets/style/reset.sass';
+import './test/assets/style/media.sass';
+
 
 
 ReactDOM.render((
