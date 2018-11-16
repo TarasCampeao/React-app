@@ -9,7 +9,7 @@ import Home from './test/components/home/home';
 import About from './test/components/about/about';
 import Contacts from './test/components/contacts/contacts';
 import Post from './test/components/post/post';
-import Error from './test/components/error/error';
+import NotFound from './test/components/notFound/notFound';
 import './test/assets/style/reset.sass';
 import './test/assets/style/media.sass';
 
@@ -23,7 +23,7 @@ ReactDOM.render((
         <Route path='/contacts' component={Contacts} />
         <Route path='/about' component={About} />
         <Route path='/posts/:id' component={Post} />
-        <Route path='*' component={Error} />
+        <Route path='*' component={NotFound} />
       </Switch>
     </App>
   </BrowserRouter>

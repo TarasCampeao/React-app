@@ -1,7 +1,7 @@
 import React from 'react';
-import './error.sass';
+import './notFound.sass';
 
-const Error = () => (
+const NotFound = () => (
   <div className="error-block">
     <div className="tc">
 		<h1>Page not found!</h1>
@@ -10,4 +10,4 @@ const Error = () => (
   </div>	
 );
 
-export default Error;
+export default NotFound;
